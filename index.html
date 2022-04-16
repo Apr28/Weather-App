@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Foracsting | Web App</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/button.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <div class="logo" onclick="home()">
+          <img src="/sun.png" alt="logo" />
+          <h1>Weatherly</h1>
+        </div>
+        <div class="hello">
+          <img src="/user.png" alt="user" />
+          <h1>hello <span> there! </span></h1>
+        </div>
+        
+          <form class="search-box" id="form">
+            <input
+            type="text"
+            id="cityname"
+            placeholder="Search by cityname"
+            required
+          />
+          <input type="submit" value="Get">
+          </form>
+      </nav>
+    </header>
+
+    <main>
+      <div id="left">
+        <!-- CITY WEATHER REPORT -->
+      </div>
+      <div id="right">
+        <!-- CITY MAP  -->
+        
+        </div>
+      </div>
+    </main>
+    
+
+    <section id="btnSection">
+      <button class="button-19" role="button" onclick="sevendays()">
+        get 7 days weather forcast
+      </button>
+    </section>
+
+
+      <!-- ALL THE WEATHER / TEMPLERATURE GOES HERE -->
+    <section id="allReports">
+      <!-- <div id="top"></div>
+      <div id="bottom"></div> -->
+    </section>
+  </body>
+</html>
+
+<script src="/script.js"></script>
